@@ -2,16 +2,22 @@ import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import logo from "../logo.svg";
+import logoFooter from "../logoFooter.svg";
 
 const SharedLayout = () => {
   return (
     <>
       <header>
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="logo" />
         <Navbar></Navbar>
       </header>
-      <Outlet></Outlet>
-      <footer></footer>
+      <main>
+        <Outlet></Outlet>
+      </main>
+      <footer className="footer">
+        <img className="footer-img" src={logoFooter} alt="logo" />
+        <p className="footer-text">© 2020 Kasa. All rights reserved</p>
+      </footer>
     </>
   );
 };
