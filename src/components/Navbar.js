@@ -7,7 +7,7 @@ const Navbar = () => {
       <Link to="/" className="navbar-el">
         Accueil
       </Link>
-      <Link to="About" className="navbar-el">
+      <Link to="about" className="navbar-el">
         À Propos
       </Link>
     </nav>
