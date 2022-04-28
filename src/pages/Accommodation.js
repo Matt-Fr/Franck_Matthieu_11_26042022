@@ -7,9 +7,42 @@ const Accommodation = () => {
   const accommodation = data.find(
     (singleAcc) => singleAcc.id === accommodationId
   );
-  const { title } = accommodation;
+  const {
+    title,
+    description,
+    pictures,
+    host: { name, picture },
+    rating,
+    location,
+    tags,
+  } = accommodation;
 
-  return <div>{title}</div>;
+  return (
+    <section className="infoAcc">
+      <div className="infoAcc-container">
+        <h2 className="infoAcc-container-title">{title}</h2>
+        <span className="infoAcc-container-location">{location}</span>
+        <div className="infoAcc-container-tagContainer">
+          {tags.map((tag) => {
+            return (
+              <span className="infoAcc-container-tagContainer-tag">{tag}</span>
+            );
+          })}
+        </div>
+      </div>
+      <div className="infoOwner">
+        <div className="infoOwner-container">
+          <span className="infoOwner-container-name">{name}</span>
+          <img
+            src={picture}
+            alt={`photo de profil de ${name}`}
+            className="infoOwner-container-img"
+          />
+        </div>
+        <div>Des étoiles pour le rating</div>
+      </div>
+    </section>
+  );
 };
 
 export default Accommodation;
