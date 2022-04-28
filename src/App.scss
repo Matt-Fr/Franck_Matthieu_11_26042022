@@ -129,6 +129,7 @@ main {
   &-container {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     &-title {
       color: $main-color;
       margin: 0;
@@ -161,10 +162,17 @@ main {
 }
 
 .infoOwner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   &-container {
     display: flex;
     align-items: center;
     &-name {
+      text-align: right;
+      margin-right: 0.4rem;
+      color: $main-color;
+      font-size: 1.1rem;
     }
     &-img {
       width: 4rem;
