@@ -14,7 +14,9 @@ const Home = () => {
         {data.map((accommodation) => {
           const { id, title, cover } = accommodation;
 
-          return <Thumbnail key={id} title={title} cover={cover}></Thumbnail>;
+          return (
+            <Thumbnail key={id} id={id} title={title} cover={cover}></Thumbnail>
+          );
         })}
       </section>
     </>
