@@ -244,4 +244,26 @@ main {
   height: 4rem;
   border-radius: 50%;
 }
+
+.imgContainer {
+  position: relative;
+  width: 100%;
+  border: 1px black solid;
+  height: 26rem;
+  border-radius: 1.5rem;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 13rem;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
 /*# sourceMappingURL=App.css.map */
