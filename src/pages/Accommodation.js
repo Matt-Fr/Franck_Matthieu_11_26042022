@@ -18,10 +18,10 @@ const Accommodation = () => {
     location,
     tags,
   } = accommodation;
-  console.log(pictures);
+
   return (
     <>
-      <Slider></Slider>
+      <Slider pictures={pictures}></Slider>
       <section className="infoAcc">
         <div className="infoAcc-container">
           <h2 className="infoAcc-container-title">{title}</h2>
