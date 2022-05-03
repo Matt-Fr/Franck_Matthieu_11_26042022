@@ -193,6 +193,7 @@ main {
   overflow: hidden;
 
   &-activeSlide,
+  &-activeSlideSolo,
   &-nextSlide,
   &-prevSlide {
     position: absolute;
@@ -200,6 +201,10 @@ main {
     height: 100%;
     object-fit: cover;
     transition: all 0.3s linear;
+  }
+
+  &-activeSlideSolo {
+    z-index: 100;
   }
 
   &-nextSlide {
@@ -221,6 +226,7 @@ main {
   color: $second-color;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 .prev {
   left: 0;

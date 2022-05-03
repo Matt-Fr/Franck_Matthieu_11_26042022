@@ -256,7 +256,7 @@ main {
   overflow: hidden;
 }
 
-.imgContainer-activeSlide, .imgContainer-nextSlide, .imgContainer-prevSlide {
+.imgContainer-activeSlide, .imgContainer-activeSlideSolo, .imgContainer-nextSlide, .imgContainer-prevSlide {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -264,6 +264,10 @@ main {
      object-fit: cover;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+}
+
+.imgContainer-activeSlideSolo {
+  z-index: 100;
 }
 
 .imgContainer-nextSlide {
@@ -289,6 +293,7 @@ main {
   color: white;
   border: none;
   padding: 0;
+  cursor: pointer;
 }
 
 .prev {

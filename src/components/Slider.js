@@ -29,6 +29,9 @@ const Slider = ({ pictures }) => {
         ) {
           position = "imgContainer-prevSlide";
         }
+        if (images.length === 1) {
+          position = "imgContainer-activeSlideSolo";
+        }
         return <img src={picture} alt="" className={position} />;
       })}
       <button
