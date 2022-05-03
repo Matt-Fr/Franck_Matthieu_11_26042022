@@ -248,12 +248,12 @@ main {
 .imgContainer {
   position: relative;
   width: 100%;
-  border: 1px black solid;
   height: 26rem;
   border-radius: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  overflow: hidden;
 }
 
 .imgContainer-activeSlide, .imgContainer-nextSlide, .imgContainer-prevSlide {
@@ -269,17 +269,26 @@ main {
 .imgContainer-nextSlide {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  opacity: 0;
 }
 
 .imgContainer-prevSlide {
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
+  opacity: 0;
 }
 
 .prev,
 .next {
   position: absolute;
-  top: 13rem;
+  top: 50%;
+  font-size: 8rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background: none;
+  color: white;
+  border: none;
+  padding: 0;
 }
 
 .prev {
@@ -288,5 +297,16 @@ main {
 
 .next {
   right: 0;
+}
+
+.indexImg {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: white;
+  font-size: 1.1rem;
+  z-index: 100;
 }
 /*# sourceMappingURL=App.css.map */

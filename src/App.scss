@@ -186,10 +186,11 @@ main {
   position: relative;
 
   width: 100%;
-  border: 1px black solid;
+
   height: 26rem;
   border-radius: 1.5rem;
   display: flex;
+  overflow: hidden;
 
   &-activeSlide,
   &-nextSlide,
@@ -203,15 +204,23 @@ main {
 
   &-nextSlide {
     transform: translateX(100%);
+    opacity: 0;
   }
   &-prevSlide {
     transform: translateX(-100%);
+    opacity: 0;
   }
 }
 .prev,
 .next {
   position: absolute;
-  top: 13rem;
+  top: 50%;
+  font-size: 8rem;
+  transform: translateY(-50%);
+  background: none;
+  color: $second-color;
+  border: none;
+  padding: 0;
 }
 .prev {
   left: 0;
@@ -219,4 +228,14 @@ main {
 
 .next {
   right: 0;
+}
+
+.indexImg {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $second-color;
+  font-size: 1.1rem;
+  z-index: 100;
 }
