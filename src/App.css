@@ -156,6 +156,7 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 2rem;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -250,7 +251,9 @@ main {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 1rem;
-  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 .imgContainer {
