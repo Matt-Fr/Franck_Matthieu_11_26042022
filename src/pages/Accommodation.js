@@ -1,8 +1,8 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import data from "../data.json";
-
 import Slider from "../components/Slider";
+import StarsRating from "../components/StarsRating";
 
 const Accommodation = () => {
   const { accommodationId } = useParams();
@@ -45,7 +45,9 @@ const Accommodation = () => {
               className="infoOwner-container-img"
             />
           </div>
-          <div>Des étoiles pour le rating</div>
+          <div className="infoOwner-starsContainer">
+            <StarsRating rating={rating}></StarsRating>
+          </div>
         </div>
       </section>
     </>

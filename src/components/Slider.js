@@ -4,7 +4,6 @@ import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 const Slider = ({ pictures }) => {
   const [images, setImages] = useState(pictures);
   const [index, setIndex] = useState(0);
-  console.log(index);
 
   useEffect(() => {
     const lastIndex = images.length - 1;
