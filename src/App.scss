@@ -184,13 +184,28 @@ main {
 
 .imgContainer {
   position: relative;
+
   width: 100%;
   border: 1px black solid;
   height: 26rem;
   border-radius: 1.5rem;
-  &-img {
+  display: flex;
+
+  &-activeSlide,
+  &-nextSlide,
+  &-prevSlide {
+    position: absolute;
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    transition: all 0.3s linear;
+  }
+
+  &-nextSlide {
+    transform: translateX(100%);
+  }
+  &-prevSlide {
+    transform: translateX(-100%);
   }
 }
 .prev,

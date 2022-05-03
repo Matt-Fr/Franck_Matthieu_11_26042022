@@ -6,7 +6,9 @@ const slider = ({ pictures }) => {
   return (
     <div className="imgContainer">
       {pictures.map((picture) => {
-        return <img src={picture} alt="" className="imgContainer-img" />;
+        return (
+          <img src={picture} alt="" className="imgContainer-activeSlide" />
+        );
       })}
       <button className="prev">
         <FiChevronLeft />
