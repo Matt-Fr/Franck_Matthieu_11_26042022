@@ -1,4 +1,4 @@
-header {
+.header {
   margin: 1.5rem 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -334,5 +334,57 @@ main {
 .starEmpty {
   color: grey;
   font-size: 2rem;
+}
+
+.collapse {
+  background: #f6f6f6;
+  border-radius: 0.3rem;
+  margin: 2rem 0;
+}
+
+.collapse-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+  background-color: #ff6060;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 0.3rem;
+  padding: 0.4rem 1.1rem;
+}
+
+.collapse-header-title {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+.collapse-header-btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.collapse-info {
+  color: #ff6060;
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 1.125rem;
+}
+
+.chevronDown {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+}
+
+.chevron {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 150ms ease-in-out;
+  transition: 150ms ease-in-out;
 }
 /*# sourceMappingURL=App.css.map */

@@ -7,7 +7,7 @@ import logoFooter from "../logoFooter.svg";
 const SharedLayout = () => {
   return (
     <>
-      <header>
+      <header className="header">
         <img src={logo} alt="logo" />
         <Navbar></Navbar>
       </header>
