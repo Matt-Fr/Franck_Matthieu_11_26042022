@@ -16,7 +16,7 @@ const About = () => {
         />
         <Collapse
           title="Respect"
-          info="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
+          info="La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."
         />
         <Collapse
           title="Service"

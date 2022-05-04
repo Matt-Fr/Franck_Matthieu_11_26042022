@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import data from "../data.json";
 import Slider from "../components/Slider";
 import StarsRating from "../components/StarsRating";
+import Collapse from "../components/Collapse";
 
 const Accommodation = () => {
   const { accommodationId } = useParams();
@@ -17,6 +18,7 @@ const Accommodation = () => {
     rating,
     location,
     tags,
+    equipments,
   } = accommodation;
 
   return (
@@ -48,6 +50,24 @@ const Accommodation = () => {
           <div className="infoOwner-starsContainer">
             <StarsRating rating={rating}></StarsRating>
           </div>
+        </div>
+      </section>
+      <section className="collapseContainerAcc">
+        <div className="collapseContainerAcc-div">
+          <Collapse
+            title="Description"
+            info={description}
+            className="collapse-acc"
+          />
+        </div>
+        <div className="collapseContainerAcc-div">
+          <Collapse
+            title="Équipements"
+            className="collapse-acc"
+            info={equipments.map((equipement) => {
+              return <span>{equipement}</span>;
+            })}
+          />
         </div>
       </section>
     </>

@@ -288,6 +288,8 @@ main {
     font-size: 1.5rem;
     font-weight: 400;
     padding: 1.125rem;
+    display: flex;
+    flex-direction: column;
   }
 }
 
@@ -307,4 +309,12 @@ main {
   -o-transform: rotate(0deg);
   transform: rotate(0deg);
   transition: 150ms ease-in-out;
+}
+
+.collapseContainerAcc {
+  display: flex;
+  justify-content: space-between;
+  &-div {
+    width: 45%;
+  }
 }
