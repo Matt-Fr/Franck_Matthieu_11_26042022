@@ -41,6 +41,8 @@ main {
   }
 }
 
+//error page
+
 .errorSection {
   color: $primary-color;
   display: flex;
@@ -62,6 +64,10 @@ main {
   }
 }
 
+//end-error page
+
+//home page
+
 .homeHeader {
   width: 100%;
   border-radius: 1rem;
@@ -76,13 +82,26 @@ main {
   }
   &-title {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
     color: $second-color;
     font-size: 3rem;
     margin: 0;
-    white-space: nowrap;
+  }
+}
+
+@media only screen and (min-width: 1016px) {
+  .homeHeader {
+    height: 14rem;
+
+    &-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      margin: 0;
+      white-space: nowrap;
+    }
   }
 }
 
@@ -91,6 +110,7 @@ main {
   margin: 4rem 0;
   display: flex;
   flex-wrap: wrap;
+  border-radius: 1.5rem;
 }
 
 .thumbnail {
@@ -162,6 +182,10 @@ main {
   }
 }
 
+//end home page
+
+//acc Page
+
 .infoOwner {
   display: flex;
   flex-direction: column;
@@ -187,7 +211,9 @@ main {
     justify-content: end;
   }
 }
+//end of acc
 
+//slider
 .imgContainer {
   position: relative;
   width: 100%;
@@ -249,7 +275,8 @@ main {
   font-size: 1.1rem;
   z-index: 100;
 }
-
+//end of slider
+//star Rating
 .starFilled {
   color: red;
   font-size: 2rem;
@@ -259,7 +286,9 @@ main {
   color: grey;
   font-size: 2rem;
 }
+//end of star rating
 
+//collapse
 .collapse {
   background: $third-color;
   border-radius: 0.3rem;
@@ -316,5 +345,41 @@ main {
   justify-content: space-between;
   &-div {
     width: 45%;
+  }
+}
+
+// end of collapse
+
+@media only screen and (max-width: 1016px) {
+  .logoHeader {
+    width: 40%;
+  }
+  .header {
+    margin: 1.25rem;
+  }
+
+  main {
+    margin: 1.25rem;
+  }
+
+  .homeHeader {
+    position: relative;
+    width: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+
+    &-img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+      filter: contrast(60%);
+    }
+    &-title {
+      font-size: 1.5rem;
+      margin: 1.1rem;
+    }
   }
 }

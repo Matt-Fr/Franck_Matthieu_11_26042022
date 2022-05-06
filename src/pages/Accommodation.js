@@ -41,11 +41,7 @@ const Accommodation = () => {
         <div className="infoOwner">
           <div className="infoOwner-container">
             <span className="infoOwner-container-name">{name}</span>
-            <img
-              src={picture}
-              alt={`photo de profil de ${name}`}
-              className="infoOwner-container-img"
-            />
+            <img src={picture} alt={name} className="infoOwner-container-img" />
           </div>
           <div className="infoOwner-starsContainer">
             <StarsRating rating={rating}></StarsRating>

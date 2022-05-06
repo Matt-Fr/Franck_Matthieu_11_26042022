@@ -8,7 +8,7 @@ const SharedLayout = () => {
   return (
     <>
       <header className="header">
-        <img src={logo} alt="logo" />
+        <img src={logo} alt="logo" className="logoHeader" />
         <Navbar></Navbar>
       </header>
       <main>
