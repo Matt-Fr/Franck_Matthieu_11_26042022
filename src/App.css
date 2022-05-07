@@ -44,6 +44,10 @@ footer {
   text-decoration: none;
 }
 
+.navbar-el:hover {
+  text-decoration: underline;
+}
+
 .active {
   text-decoration: underline;
 }
@@ -654,6 +658,9 @@ main {
   .errorSection-link {
     margin: 5rem 0;
     font-size: 0.9rem;
+  }
+  .navbar-el {
+    text-transform: uppercase;
   }
 }
 /*# sourceMappingURL=App.css.map */

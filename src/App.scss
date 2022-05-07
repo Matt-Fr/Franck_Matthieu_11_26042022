@@ -37,6 +37,10 @@ footer {
   }
 }
 
+.navbar-el:hover {
+  text-decoration: underline;
+}
+
 .active {
   text-decoration: underline;
 }
@@ -568,6 +572,12 @@ main {
     &-link {
       margin: 5rem 0;
       font-size: 0.9rem;
+    }
+  }
+
+  .navbar {
+    &-el {
+      text-transform: uppercase;
     }
   }
 }
