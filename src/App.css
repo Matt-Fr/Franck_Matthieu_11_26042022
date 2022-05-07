@@ -107,6 +107,7 @@ main {
 }
 
 .errorSection-link {
+  color: #ff6060;
   margin: 10rem 0;
   font-size: 1.1rem;
 }
@@ -640,6 +641,19 @@ main {
   }
   .chevron {
     width: 0.7rem;
+  }
+  .errorSection {
+    margin-top: 5rem;
+  }
+  .errorSection-num {
+    font-size: 6rem;
+  }
+  .errorSection-text {
+    font-size: 1.1rem;
+  }
+  .errorSection-link {
+    margin: 5rem 0;
+    font-size: 0.9rem;
   }
 }
 /*# sourceMappingURL=App.css.map */
