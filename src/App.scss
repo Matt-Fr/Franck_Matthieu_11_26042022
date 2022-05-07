@@ -2,6 +2,26 @@ $primary-color: #ff6060;
 $second-color: white;
 $third-color: #f6f6f6;
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  margin-top: auto;
+}
+
 .header {
   margin: 1.5rem 6.25rem;
   display: flex;
