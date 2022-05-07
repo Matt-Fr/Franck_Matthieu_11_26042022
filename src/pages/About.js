@@ -5,11 +5,11 @@ import pic from "../pictureAbout.png";
 const About = () => {
   return (
     <>
-      <section className="homeHeader">
-        <img src={pic} alt="" className="homeHeader-img" />
+      <section className="aboutHeader">
+        <img src={pic} alt="" className="aboutHeader-img" />
       </section>
 
-      <section>
+      <section className="collapseContainerAbout">
         <Collapse
           title="Fiabilité"
           info="Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées  par nos équipes."
