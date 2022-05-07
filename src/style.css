@@ -665,6 +665,7 @@ main {
     font-size: 0.9rem;
   }
   .navbar-el {
+    font-size: 0.75rem;
     text-transform: uppercase;
   }
 }
