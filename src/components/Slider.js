@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
 const Slider = ({ pictures }) => {
-  const [images, setImages] = useState(pictures);
+  const images = pictures;
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
