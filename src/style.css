@@ -396,6 +396,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   color: white;
+  cursor: pointer;
   background-color: #ff6060;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

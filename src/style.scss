@@ -327,7 +327,7 @@ main {
   &-header {
     display: flex;
     color: $second-color;
-
+    cursor: pointer;
     background-color: $primary-color;
     justify-content: space-between;
     border-radius: 0.3rem;
