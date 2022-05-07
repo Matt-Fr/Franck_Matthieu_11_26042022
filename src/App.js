@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./style.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import SharedLayout from "./pages/SharedLayout";
 import Error from "./pages/Error";
