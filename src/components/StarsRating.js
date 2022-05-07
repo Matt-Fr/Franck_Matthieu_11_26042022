@@ -8,8 +8,8 @@ const StarsRating = ({ rating }) => {
     <>
       {stars.map((star, indexStar) => {
         if (indexStar <= rating - 1) {
-          return <IoStarSharp className="starFilled" />;
-        } else return <IoStarSharp className="starEmpty" />;
+          return <IoStarSharp key={star} className="starFilled" />;
+        } else return <IoStarSharp key={star} className="starEmpty" />;
       })}
     </>
   );

@@ -36,7 +36,10 @@ const Accommodation = () => {
             <div className="infoAcc-container-tagContainer">
               {tags.map((tag) => {
                 return (
-                  <span className="infoAcc-container-tagContainer-tag">
+                  <span
+                    key={tag}
+                    className="infoAcc-container-tagContainer-tag"
+                  >
                     {tag}
                   </span>
                 );

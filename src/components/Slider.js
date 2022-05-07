@@ -31,7 +31,7 @@ const Slider = ({ pictures }) => {
         if (images.length === 1) {
           position = "imgContainer-activeSlideSolo";
         }
-        return <img src={picture} alt="" className={position} />;
+        return <img src={picture} alt="" key={picture} className={position} />;
       })}
       <button
         className="prev"
