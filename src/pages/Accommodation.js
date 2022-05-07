@@ -73,7 +73,7 @@ const Accommodation = () => {
               title="Équipements"
               className="collapse-acc"
               info={equipments.map((equipement) => {
-                return <span>{equipement}</span>;
+                return <span key={equipement}>{equipement}</span>;
               })}
             />
           </div>

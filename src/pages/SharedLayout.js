@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
-import logo from "../logo.svg";
-import logoFooter from "../logoFooter.svg";
+import logo from "../assets/logo.svg";
+import logoFooter from "../assets/logoFooter.svg";
 
 const SharedLayout = () => {
   return (

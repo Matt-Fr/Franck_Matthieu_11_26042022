@@ -1,6 +1,6 @@
 import React from "react";
 import Collapse from "../components/Collapse";
-import pic from "../pictureAbout.png";
+import pic from "../assets/pictureAbout.png";
 
 const About = () => {
   return (

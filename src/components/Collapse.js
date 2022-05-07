@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ReactComponent as Chevron } from "../chevron.svg";
+import { ReactComponent as Chevron } from "../assets/chevron.svg";
 
 const Collapse = ({ title, info }) => {
   const [showInfo, setShowInfo] = useState(false);

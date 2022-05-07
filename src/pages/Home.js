@@ -1,5 +1,5 @@
 import React from "react";
-import backgroundImg from "../background.png";
+import backgroundImg from "../assets/background.png";
 import Thumbnail from "../components/Thumbnail";
 import data from "../data.json";
 
