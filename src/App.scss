@@ -519,8 +519,11 @@ main {
     }
     &-starsContainer {
       margin-bottom: 0;
+      display: flex;
+      flex-wrap: nowrap;
     }
   }
+
   .starFilled,
   .starEmpty {
     font-size: 0.9rem;
