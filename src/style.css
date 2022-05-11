@@ -401,6 +401,9 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 0.3rem;
   padding: 0.4rem 1.1rem;
 }
@@ -483,7 +486,7 @@ main {
 
 @media only screen and (max-width: 1016px) {
   .logoHeader {
-    width: 40%;
+    width: 9rem;
   }
   .header {
     margin: 1.25rem;
@@ -572,8 +575,7 @@ main {
     display: flex;
   }
   .infoAcc-container-tagContainer-tag {
-    width: 5.25rem;
-    padding: 0;
+    padding: 0.4rem 0;
     font-size: 0.6rem;
   }
   .infoOwner {
@@ -668,6 +670,13 @@ main {
   .navbar-el {
     font-size: 0.75rem;
     text-transform: uppercase;
+  }
+}
+
+@media only screen and (max-width: 1412px) and (min-width: 1016px) {
+  .thumbContainer {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 /*# sourceMappingURL=style.css.map */

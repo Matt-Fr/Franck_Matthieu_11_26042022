@@ -208,7 +208,6 @@ main {
         color: $second-color;
         border-radius: 0.4rem;
         font-size: 0.9rem;
-
         margin: 1rem 1rem 1rem 0;
 
         // min-width: 7.1rem;
@@ -330,6 +329,7 @@ main {
     cursor: pointer;
     background-color: $primary-color;
     justify-content: space-between;
+    align-items: center;
     border-radius: 0.3rem;
     padding: 0.4rem 1.1rem;
     &-title {
@@ -407,7 +407,7 @@ main {
 
 @media only screen and (max-width: 1016px) {
   .logoHeader {
-    width: 40%;
+    width: 9rem;
   }
   .header {
     margin: 1.25rem;
@@ -493,8 +493,7 @@ main {
         display: flex;
 
         &-tag {
-          width: 5.25rem;
-          padding: 0;
+          padding: 0.4rem 0;
           font-size: 0.6rem;
         }
       }
@@ -586,3 +585,9 @@ main {
   }
 }
 //end of error
+
+@media only screen and (max-width: 1412px) and (min-width: 1016px) {
+  .thumbContainer {
+    justify-content: space-around;
+  }
+}
